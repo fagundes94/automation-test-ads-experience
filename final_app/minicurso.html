@@ -66,13 +66,15 @@
     <form id="minicursoForm" class="row g-3 mb-4">
       <div class="col-md-6">
         <label class="form-label">Título do Minicurso</label>
-        <input type="text" class="form-control" id="titulo" required>
+        <input type="text" class="form-control" id="titulo">
       </div>
 
       <div class="col-md-6">
         <label class="form-label">Palestrante</label>
-        <select class="form-select" id="palestrante" required>
+        <select class="form-select" id="palestrante">
           <option selected disabled>Selecione o palestrante</option>
+          <option>Fagundes Fernandes</option>
+          <option>Fagundes Fernandes</option>
           <option>Fagundes Fernandes</option>
           <option>João da Silva</option>
           <option>Maria Eugênea</option>
@@ -80,38 +82,38 @@
       </div>
 
       <div class="col-md-12">
-        <label class="form-label">Descrição</label>
-        <textarea class="form-control" id="descricao" rows="2" required></textarea>
+        <label class="form-label">dESCRIÇÃO</label>
+        <textarea class="form-control" id="descricao" rows="2"></textarea>
       </div>
 
       <div class="col-md-4">
         <label class="form-label">Data</label>
-        <input type="date" class="form-control" id="data" required>
+        <input type="text" class="form-control" id="data">
       </div>
 
       <div class="col-md-4">
         <label class="form-label">Hora Início</label>
-        <input type="time" class="form-control" id="horaInicio" required>
+        <input type="text" class="form-control" id="horaInicio">
       </div>
 
       <div class="col-md-4">
         <label class="form-label">Hora Fim</label>
-        <input type="time" class="form-control" id="horaFim" required>
+        <input type="text" class="form-control" id="horaFim">
       </div>
 
       <div class="col-md-6">
         <label class="form-label">Local</label>
-        <input type="text" class="form-control" id="local" required>
+        <input type="text" class="form-control" id="local">
       </div>
 
       <div class="col-md-3">
         <label class="form-label">Carga Horária (h)</label>
-        <input type="number" class="form-control" id="cargaHoraria" required>
+        <input type="number" class="form-control" id="cargaHoraria">
       </div>
 
       <div class="col-md-3">
         <label class="form-label">Vagas</label>
-        <input type="number" class="form-control" id="vagas" required>
+        <input type="text" class="form-control" id="vagas">
       </div>
 
       <div class="col-md-6">
@@ -125,13 +127,13 @@
       </div>
 
       <div class="col-12 d-flex justify-content-between">
-        <button type="submit" class="btn btn-primary">Cadastrar Minicurso</button>
-        <a href="dashboard.html" class="btn btn-secondary">Voltar para Home</a>
+        <button type="submit">Cadastrar Minicurso</button>
+        <a href="alunos.html" class="btn btn-secondary">Voltar para Home</a>
       </div>
     </form>
 
     <!-- Lista de minicursos -->
-    <h4>Minicursos Cadastrados</h4>
+    <h4>minicurso cadastros</h4>
     <table class="table table-bordered table-striped mt-3">
       <thead class="table-dark">
         <tr>
@@ -157,25 +159,16 @@
     document.getElementById("minicursoForm").addEventListener("submit", function (event) {
       event.preventDefault();
 
-      const titulo = document.getElementById("titulo").value;
-      const palestrante = document.getElementById("palestrante").value;
-      const data = document.getElementById("data").value;
-      const horaInicio = document.getElementById("horaInicio").value;
-      const horaFim = document.getElementById("horaFim").value;
-      const local = document.getElementById("local").value;
-      const cargaHoraria = document.getElementById("cargaHoraria").value;
-      const vagas = document.getElementById("vagas").value;
-
       const tabela = document.getElementById("tabelaMinicursos");
       const novaLinha = document.createElement("tr");
       novaLinha.innerHTML = `
-        <td>${titulo}</td>
-        <td>${palestrante}</td>
-        <td>${data}</td>
-        <td>${horaInicio} - ${horaFim}</td>
-        <td>${local}</td>
-        <td>${cargaHoraria}h</td>
-        <td>${vagas}</td>
+        <td>${null}</td>
+        <td>${null}</td>
+        <td>${null}</td>
+        <td>${null} - ${null}</td>
+        <td>${null}</td>
+        <td>${null}h</td>
+        <td>${null}</td>
       `;
       tabela.appendChild(novaLinha);
 
