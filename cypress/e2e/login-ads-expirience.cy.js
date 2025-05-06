@@ -2,7 +2,7 @@ describe('Testa login da página do ads experience', () => {
 
     beforeEach (() => {
         cy.visit('./final_app/login.html')
-      })
+    })
     
     
     it('deve realizar o login com sucesso', () =>{
