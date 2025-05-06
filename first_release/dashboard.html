@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+    }
+
+    .sidebar {
+      height: 100vh;
+      background-color: #343a40;
+      color: white;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 220px;
+      padding-top: 60px;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+    }
+
+    .sidebar a:hover {
+      background-color: #495057;
+    }
+
+    .main-content {
+      margin-left: 220px;
+      padding: 2rem;
+      margin-top: 70px;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">ADS Experience Dashboard</span>
+      <button class="btn btn-outline-light" onclick="sair()">Sair</button>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h5 class="text-center">Menu</h5>
+    <a href="dashboard.html">Home</a>
+    <a href="palestra.html">Palestras</a>
+    <a href="minicurso.html">Minicursos</a>
+    <a href="palestrante.html">Palestrantes</a>
+    <a href="alunos.html">Alunos</a>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="main-content">
+    <h2>Bem-vindo ao Dashboard</h2>
+    <p>Aqui você pode gerenciar todas as informações do evento.</p>
+
+    <!-- Aqui você pode adicionar os indicadores, gráficos ou cards que deseja exibir no dashboard -->
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Total de Alunos</h5>
+            <p class="card-text">150</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Total de Palestras</h5>
+            <p class="card-text">12</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Minicursos Disponíveis</h5>
+            <p class="card-text">8</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function sair() {
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>
+
