@@ -4,6 +4,10 @@ Este projeto foi desenvolvido com o objetivo de implementar testes automatizados
 
 ## Configuração do projeto
 
+### Pré-requisito
+
+- É ncessário ter o node instalado na máquina.
+
 ### Instalando as dependências
 
 - Instalando o Cypress
